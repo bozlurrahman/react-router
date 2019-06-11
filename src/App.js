@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -7,12 +7,21 @@ function App() {
       <div>
         <Header />
 
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/topics" component={Topics} />
+          {/* when none of the above match, <NoMatch> will be rendered */}
+          <Route component={NoMatch} />
+        </Switch>
+
       </div>
     </Router>
   );
+}
+
+function NoMatch() {
+  return <h2>Page Not Found</h2>;
 }
 
 function Home() {
