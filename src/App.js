@@ -2,6 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 function App() {
+  
+  const someVariable = true;
+
   return (
     <Router>
       <div>
@@ -10,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/render-prop" render={props => <RenderAbout {...props} extra={someVariable} /> } />
           <Route path="/topics" component={Topics} />
           {/* when none of the above match, <NoMatch> will be rendered */}
           <Route component={NoMatch} />
@@ -30,6 +34,12 @@ function Home() {
 
 function About() {
   return <h2>About</h2>;
+}
+
+function RenderAbout(props) {
+  console.log(props);
+  console.log(props.extra);
+  return <h2>RenderAbout</h2>;
 }
 
 function Topic({ match }) {
@@ -65,6 +75,9 @@ function Header() {
       </li>
       <li>
         <Link to="/about">About</Link>
+      </li>
+      <li>
+        <Link to="/render-prop">Render with Property</Link>
       </li>
       <li>
         <Link to="/topics">Topics</Link>
