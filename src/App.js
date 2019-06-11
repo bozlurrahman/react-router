@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom";
 
 function App() {
   
@@ -71,16 +71,16 @@ function Header() {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink exact className='example-class' activeClassName='active' to="/" >Home</NavLink>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <Link to="/render-prop">Render with Property</Link>
+        <NavLink to="/render-prop">Render with Property</NavLink>
       </li>
       <li>
-        <Link to="/topics">Topics</Link>
+        <NavLink to="/topics">Topics</NavLink>
       </li>
     </ul>
   );
