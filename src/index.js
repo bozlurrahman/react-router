@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NoMatchExample from './scripts/NoMatchExample';
+import RecursivePaths from './scripts/RecursivePaths';
 
-ReactDOM.render(<NoMatchExample />, document.getElementById('root'));
+ReactDOM.render(<RecursivePaths />, document.getElementById('root'));
