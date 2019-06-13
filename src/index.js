@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import URLParameters from './scripts/URLParameters';
+import RedirectsAuth from './scripts/Redirects_Auth';
 
-ReactDOM.render(<URLParameters />, document.getElementById('root'));
+ReactDOM.render(<RedirectsAuth />, document.getElementById('root'));
