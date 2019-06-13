@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RedirectsAuth from './scripts/Redirects_Auth';
+import NoMatchExample from './scripts/NoMatchExample';
 
-ReactDOM.render(<RedirectsAuth />, document.getElementById('root'));
+ReactDOM.render(<NoMatchExample />, document.getElementById('root'));
