@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SidebarExample from './scripts/SidebarExample';
+import AnimationExample from './scripts/AnimationExample';
 
-ReactDOM.render(<SidebarExample />, document.getElementById('root'));
+ReactDOM.render(<AnimationExample />, document.getElementById('root'));
