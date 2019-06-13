@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RecursivePaths from './scripts/RecursivePaths';
+import SidebarExample from './scripts/SidebarExample';
 
-ReactDOM.render(<RecursivePaths />, document.getElementById('root'));
+ReactDOM.render(<SidebarExample />, document.getElementById('root'));
