@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouteConfig from './scripts/RouteConfig';
+import ModalGallery from './scripts/ModalGallery';
 
-ReactDOM.render(<RouteConfig />, document.getElementById('root'));
+ReactDOM.render(<ModalGallery />, document.getElementById('root'));
