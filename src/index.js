@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ModalGallery from './scripts/ModalGallery';
+import QueryParameters from './scripts/QueryParameters';
 
-ReactDOM.render(<ModalGallery />, document.getElementById('root'));
+ReactDOM.render(<QueryParameters />, document.getElementById('root'));
