@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AnimationExample from './scripts/AnimationExample';
+import RouteConfig from './scripts/RouteConfig';
 
-ReactDOM.render(<AnimationExample />, document.getElementById('root'));
+ReactDOM.render(<RouteConfig />, document.getElementById('root'));
